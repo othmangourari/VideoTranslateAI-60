@@ -1,0 +1,92 @@
+name: video_translate_ai
+description: تطبيق احترافي لترجمة الفيديوهات باستخدام الذكاء الاصطناعي
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # State Management
+  provider: ^6.1.1
+  
+  # Navigation
+  go_router: ^13.0.0
+
+  # File Handling
+  file_picker: ^6.1.1
+  image_picker: ^1.0.7
+  path_provider: ^2.1.2
+  path: ^1.9.0
+
+  # Video & Audio
+  video_player: ^2.8.2
+  ffmpeg_kit_flutter: ^6.0.3
+  
+  # Storage
+  shared_preferences: ^2.2.2
+  sqflite: ^2.3.0
+  
+  # Networking / AI APIs
+  http: ^1.2.0
+  dio: ^5.4.1
+  
+  # Export
+  pdf: ^3.10.8
+  share_plus: ^7.2.1
+  
+  # Permissions
+  permission_handler: ^11.3.0
+  
+  # UI
+  flutter_svg: ^2.0.9
+  lottie: ^3.0.0
+  shimmer: ^3.0.0
+  cached_network_image: ^3.3.1
+  intl: ^0.19.0
+  
+  # Utils
+  uuid: ^4.3.3
+  mime: ^1.0.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/animations/
+
+  fonts:
+    - family: Cairo
+      fonts:
+        - asset: assets/fonts/Cairo-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Cairo-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Cairo-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Cairo-Bold.ttf
+          weight: 700
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Inter-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Inter-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Inter-Bold.ttf
+          weight: 700
